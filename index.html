@@ -1,49 +1,39 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <!DOCTYPE html>
+<html>
 <head>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"bf4f7a4ef2","applicationID":"6146642","transactionName":"cA4KTURWXl8GRR4QQlYTO0lEVlhWAENCSkJbDhNmQVZAWA==","queueTime":0,"applicationTime":11,"agent":""}</script>
-<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
-<script src="/assets/jquery.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<title>style hunt official</title>
 <style>
 body {
   font-family: helvetica, sans-serif;
   margin: 0 auto;
   max-width: 600px;
-background: url("https://images6.alphacoders.com/371/371656.jpg"); 
- background-size: cover;
+  background: #232323;
 }
 div {
-  height: 300px;
+  height: 200px;
   background-size: cover;
   position: relative;
-  margin: 40px 0px 0px -100px;
+  margin: 40px 0 0 0;
   border-radius: 12px;
-  margin-top: 70px;
-  width: 800px;
-  background-position: center;
 }
 h1 {
-  font-family: 'Londrina Shadow', cursive;
+  font-family: 'Londrina Shadow', cursive;1
   text-align: center;
-  font-size: 75px;
-  background:rgba(0,0,0,0.3);
-   border-radius:10px 10px 0 0 ;
-   
-  color: black;
+  font-size: 130px;
+  color: #aaaaaa;
   margin: 60px 0 0 0;
+  background-image: url("http://i.imgur.com/Kc8EnNF.jpg");
 }
 h2 {
   text-align: center;
-  background:rgba(0,0,0,0.3);
-  border-radius: 0 0 10px 10px;
-  padding-bottom: 10px;
-  color: black;
-  margin: 0px 0 70px 0;
+  color: #bbbbbb;
+  margin: 10px 0 70px 0;
+  background-image: url("http://i.imgur.com/7fixGjk.jpg");
 }
 p {
   color: rgba(255,255,255,1);
@@ -62,30 +52,28 @@ p {
   -webkit-transition: height .5s;
   -moz-transition: height .5s;
 }
-
 small {
   opacity: 0;
 }
-
 .show-description p {
   height: 150px;
 }
-
 .show-description small {
   opacity: 1;
 }
-
 .first{
-  background-image: url("http://imageshack.com/a/img923/1636/EUGOo7.jpg");
+  background-image: url("http://i.imgur.com/F9mXBjw.jpg");
+ 
 }
 .second{
-  background-image: url("http://imageshack.com/a/img924/3066/ZrMGYF.jpg");
+  background-image: url("http://i.imgur.com/FBovWmJ.jpg");
+  
 }
 .third{
-  background-image: url("http://imageshack.com/a/img922/7445/D3ItPS.jpg");
+  background-image: url("http://i.imgur.com/JAGLiXF.jpg");
 }
 .fourth{
-  background-image: url("http://imageshack.com/a/img922/1246/xq1ZOe.jpg");
+background-image: url("http://i.imgur.com/EOincUi.jpg");
 }
 .price {
   float: right;
@@ -102,46 +90,47 @@ small {
   }
   div {
     margin: 20px 12px 0 12px;
+  
   }
   p {
     font-size: 20px;
     line-height: 24px;
   }
+  
   small {
     font-size: 16px;
   }
 }
-
 </style>
 
 </head>
-
 <body>
-<h1>Mobomarket</h1>
-<h2>Get the Best Phone you want</h2>
+<h1>STYLE HUNT </h1>
+<h2>Great Deals On Top Product</h2>
+
 <div class="first">
-  <p>IPhone 7 <span class="price">60,000/-</span><br />
-  <small>THE GOOD Improved front and rear cameras -- now with optical image stabilization -- deliver much improved photos, especially in low light. Water resistant. A faster processor, plus better battery life. More onboard storage than last year's models for the same price.<a href="http://www.gsmarena.com/apple_iphone_7-8064.php">Click here for detailed description</a></small></p>
+<p>T-shirts <span class="price">50-80% off</span><br />
+  <small>A T-shirt (or tee shirt, or tee) is a style of unisex fabric shirt, named after the T shape of the body and sleeves. It is normally associated with short sleeves, a round neck line known as a crew neck, with no collar. T-shirts are generally made of a light, inexpensive fabric, and are easy to clean.<li><a href="https://www.google.co.in/search?biw=1366&bih=662&noj=1&tbm=isch&sa=1&q=t+shirts+design&oq=t+&gs_l=img.1.0.35i39k1l2j0i67k1l2j0l2j0i67k1j0l2j0i67k1.160246.162063.0.166666.7.7.0.0.0.0.344.654.3-2.2.0....0...1c.1.64.img..5.2.652.0.fzAhOC8pU_I">show more</a></li> </small></p>
 </div>
 
 <div class="second">
-  <p>Samsung Galaxy Note 7<span class="price">49,500/-</span><br />
-  <small>The Samsung Galaxy Note7 is powered by 1.6GHz octa-core Exynos 8890 processor and it comes with 4GB of RAM. The phone packs 64GB of internal storage that can be expanded up to 256GB via a microSD card. ... The Samsung Galaxy Note7 is a dual SIM (GSM and GSM) smartphone that accepts two Nano-SIM.<a href="http://www.gsmarena.com/samsung_galaxy_note7-8082.php">Click here for detailed description</a></small></p>
-</div>
-  
-<div class="third">
-  <p>Google Pixel<span class="price">57,000/-</span><br />
-  <small>The Google Pixel is rumored to have 12 MP primary camera and 8 MP front facing camera as the Nexus 6P which was released last year. The Nexus mobiles didn%u2019t get that much fame last year as compared to the previous years. The other thing is, it will be a 5%u2033 inch display for Google Pixel and 5.5%u2033 inch Display for Google Pixel XL..<a href="http://www.gsmarena.com/google_pixel_xl-8345.php">Click here for detailed description</a></small></p>
-</div>
-<div class="fourth">
-  <p>LG G5<span class="price">33,449/-</span><br />
-  <small>The LG G5 is powered by 2.15GHz quad-core Qualcomm Snapdragon 820 processor and it comes with 4GB of RAM. The phone packs 32GB of internal storage that can be expanded up to 200GB via a microSD card. ... The LG G5 is a dual SIM (GSM and GSM) smartphone that accepts two Nano-SIM.<a href="http://www.gsmarena.com/lg_g5-7815.php">Click here for detailed description</a></small></p>
+
+  <p>Shirts <span class="price">30-40% off</span><br />
+  <small>Everybody has at least one shirt in his wardrobe. Some have more. They are commonly worn for every day purposes and in particular when you want to dress up. But not many people know that the shirt is one of our oldest garments. <li><a href="https://www.google.co.in/search?biw=1366&bih=662&noj=1&tbm=isch&sa=1&q=shirts+design&oq=shirts+design&gs_l=img.3..0i67k1j0l9.100696.100871.0.101854.2.2.0.0.0.0.687.687.5-1.1.0....0...1c.1.64.img..1.1.686.DYEJiA68dxU">show more</a></li></small></p>
 </div>
 
+<div class="third">
+  <p>Jeans<span class="price">20-35% off</span><br />
+  <small>Jeans are trousers, a type of garment, typically made from denim or dungaree cloth. Often the term "jeans" refers to a particular style of pants, called "blue jeans," which were invented by Jacob W. Davis in partnership with Levi Strauss & Co. in 1871 and patented by Jacob W. Davis and Levi Strauss on May 20, 1873. <li><a href="https://www.google.co.in/search?biw=1366&bih=662&noj=1&tbm=isch&sa=1&q=jeans+design&oq=jeans+&gs_l=img.1.2.0i67k1l4j0l2j0i67k1j0j0i67k1l2.44327.48791.0.52726.19.14.0.0.0.0.564.857.2-1j5-1.2.0....0...1c.1.64.img..17.2.856.0..35i39k1.WOxphIoHtpU">show more</a></li></small></p>
+</div>
+<div class="fourth">
+  <p>shoes<span class="price">30% off</span><br />
+  <small> All shoes have a sole, which is the bottom of a shoe, in contact with the ground. Soles can be made from a variety of materials, although most modern shoes have soles made from natural rubber, polyurethane, or polyvinyl chloride (PVC) compounds. <li><a href="https://www.google.co.in/search?biw=1366&bih=662&noj=1&tbm=isch&sa=1&q=shoes&oq=shoes&gs_l=img.3...6352.8118.0.8901.6.6.0.0.0.0.0.0..0.0....0...1c.1.64.img..6.0.0.wUHbfxNkep4">show more</a></li></small></p>
+</div>
 <script>
   $('div').on('click', function() {
       $(this).toggleClass('show-description');
   });
 </script>
-
 </body>
+</html>
