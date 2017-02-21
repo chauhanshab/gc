@@ -1,730 +1,147 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HOTEL MOON VALLEY</title>
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" >
-  <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" >
-  <link href="assets/css/font-awesome.min.css" rel="stylesheet" >
-  <link href="assets/css/font-awesome.css" rel="stylesheet" >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet" >
- </head>
-<style type="text/css">
-.navbar-inverse .navbar-nav>li>a{
-font-size: 16px;
-}
-.navbar-inverse .navbar-nav>li>a:hover{
-  color: grey;
-}
-li {
-      display: inline;
-      padding: 10px 10px 10px 10px;
-    }
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"bf4f7a4ef2","applicationID":"6146642","transactionName":"cA4KTURWXl8GRR4QQlYTO0lEVlhWAENCSkJbDhNmQVZAWA==","queueTime":0,"applicationTime":11,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<script src="/assets/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-li:hover{
-  color: grey;
-}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-img{
-  width: 100%;
-  
-}
-
-.navbar-inverse{
-  background:rgba(0, 0, 51,1);
-  border:none;
-}
-.navbar-inverse .navbar-nav>li>a {
-     color: #fff;
-}
-.navbar-inverse .navbar-nav>.active>a{
-  background: rgba(0, 0, 0, 0.5);
-}
-#home{
- background: url('https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?dl&fit=crop&w=640&h=426');
-  text-align: center;
-  color: white;
-  background-size: cover;
-  padding: 170px 0 0 50px;
-  background-attachment: fixed;
-  border:1px solid grey;
-  border-radius: 2px;
-
-}
-.btt{
-  font-size: 30px;
-  background: #fecb00;
-  color: rgba(0, 0, 51,1);
-  border: 0;
-  border-radius: 2px;
-
-
-}
-.all{
-float: right;
-margin-right: 50px;
-
-
-}
-.btt:hover{
-background: #f0ab00;
-}
-#home h1{
-  font-size: 120px;
-  padding: 40px 0;
-    font-family: 'raleway',sans-serif;
-}
-.dec{
-  width: 100%;
-  color: white;
-  font-size: 40px;
-}
-.dec-line{
-  border-bottom: 2px solid white;
-  display: inline-block;
-  width: 25%;
-}
-#home h3{
-    font-family: 'droid serif',serif;
-    padding: 30px 0 100px 0;
-    font-size: 45px;
-}
-#home a{
-  color: white;
-  border: 2px solid white;
-  padding: 15px;
-  border-radius: 50%;
-  position: relative;;
-  bottom: 20px;
-}
-
-
-#home h2{
-  font-size: 45px;
-}
-#about{
-  text-align: center;
-  padding: 80px 5%;
-}
-#about h2{
-  font-weight: bold;
-  font-size: 40px;
-}
-#about p{
-  color: grey;
-  font-size: 25px;
-  font-family: 'droid serif',serif;
-}
-#about .dec{
-  color: #c5a47e;
-}
-#about .dec-line{
-  border-bottom-color: #c5a47e;
-}
-#about img{
-  margin-top: 30px;
-}
-#about img:hover{
-  border: 2px solid black;
-  opacity: .8;
-
-}
-#flight{
-margin: 80px 5%;
-}
-#flight h2{
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-}
-#flight h4{
-  text-align: center;
-  color: grey;
-  font-size: 25px;
-  font-family: 'droid serif',serif;
-    padding: 20px 0;
-}
-#flight .dec{
-  color: #c5a47e;
-  text-align: center;
-}
-#flight .dec-line{
-  border-bottom-color: #c5a47e;
-  text-align: center;
-}
-#flight th{
-  font-size: 20px;
-  text-align: center;
-
-}
-#flight td{
-font-size: 15px;
-color: black;
-font-family: 'droid serif',serif;
-}
-
-#popular {
-  text-align: center;
-  margin: 80px 0;
-  padding: 10px 20px;
-
-}
-#popular h2{
-  font-weight: bold;
-  font-size: 40px;
-  padding: 0px;
-}
-#popular .dec{
-  color: #c5a47e;
-  padding: 10px 0 50px 0;
-}
-#popular .dec-line{
-  border-bottom-color: #c5a47e;
-  padding: 0px 0 50px 0;
-}
-#popular h3{
-  font-size: 30px;
-}
-#popular p{
-  font-size: 25px;
-  color: grey;
-  padding: 0 10px;
-  font-family: 'droid serif',serif;
-  text-align: justify;
-}
-.sng{
-  width: 300px;
-  height: 200px;
-
-
-}
-.sng:hover{
-  border: 2px solid black;
-  opacity: .8;
-}
-
-.bbb{
-  background: grey;
-  border-radius: 20px;
-  font-size: 18px;
-  color: white;
-  border: 0px;
-  padding: 8px 20px 8px 20px;
-  margin-bottom: 20px;
-}
-.bbb:hover{
-  background: darkgrey;
-}
-#contact{
-  position: relative;
-}
-.contact-box{
-  position: absolute;
-  display: inline-block;
-  z-index: 100;
-  text-align: center;
-top: 10px;
-left: 10px;
-  background: white;
-
-}
-#contact .ee{
-  font-size: 25px;
-  padding: 0 20px ;
-
-}
-#contact h3{
-  font-size: 28px;
-}
-#contact p{
-  padding: 20px 0;
-  font-size: 18px;
-}
-#contact button{
-  font-size: 25px;
-
-}
-#map {
-  width: 100%;
-  height: 400px;
-  background-color: grey;
-
-
-}
-#foot i{
-  color: white;
-
-}
-#foot i:hover{
-  color: grey;
-}
-#foot h4{
-  color: white;
-}
-#foot h4:hover{
-  color: grey;
-}
-
-
-.qq{
-  color: grey;
-}
-.ee{
-background: white;
-border:1px solid grey;
-color: black;
-padding: 0 0 0 20px;
-font-size: 25;
-
-}
-
-.ee:hover{
-  color:grey;
-
-}
-  .fa fa-search{
-    margin-top: 20px;
-  }
-.ac{
-  width: 280px;
-  height: 50px;
-  margin-left: 0px;
-
-
-}
-.footer-links,.footer-link,.footer-social{
-
-  display: inline-block;
-  text-align: center;
-
-
-
-width: 33%;
-}
-footer{
-background:rgba(0, 0, 51,1);
-padding: 17px;
-}
-.footer-social i{
-  font-size: 25px;
-  margin: 5px;
-}
-
-@media(max-width:768px){
-  .ac{
-    width: 150px;
-  }
-  .btt{
-    font-size: 15px;
-    float: left;
-  }
-  .all{
-    float: left;
-
-
-  }
-  #home{
-    background-position: center;
-    background-size: cover;
-    padding: 50px 0 10px 0;
-  }
-
-#home h1{
-  font-size: 30px;
-}
-#home h3{
-  font-size: 15px;
-}
-#home a{
-  padding: 5px;
-
-}
-  #about{
-    padding: 30px 5%;
-  }
-  #about h2{
-    font-size: 28px;
-}
-#about p{
-
-  font-size: 17px;
-}
-
-
-#home a{
-  padding: 10px;
-  border-radius: 50%;
-  position: relative;;
-  bottom: 20px;
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
   margin: 0 auto;
+  max-width: 600px;
+background: url("https://images6.alphacoders.com/371/371656.jpg"); 
+ background-size: cover;
 }
-#flight{
-margin: 30px 5%;
+div {
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0px 0px -100px;
+  border-radius: 12px;
+  margin-top: 70px;
+  width: 800px;
+  background-position: center;
 }
-#flight h2{
-  font-size: 28px;
-
-#flight h4{
-  font-size: 17px;
-  font-family: 'droid serif',serif;
-    padding: 10px 0;
-}
-
-#flight th{
-  font-size: 16px;
-
-}
-#flight td{
-font-size: 13px;
-}
-#popular {
-  margin: 30px 0;
-  padding: 0 10px;
-
-}
-#popular h2{
-  font-size: 28px;
-}
-
-#popular h3{
-  font-size: 23px;
-
-}
-#popular p{
-  font-size: 13px;
-  padding: 0 22px;
-
-
-}
-#popular .sng{
-  height: 175px;
-  width: 350px;
-}
-.bbb{
-  font-size: 15px;
-
-  padding: 5px 15px 5px 15px;
-}
-#contact{
-
-}
-#contact .ee{
-  font-size: 15px;
-  padding: 0 10px ;
-
-}
-#contact h3{
-  font-size: 15px;
-}
-#contact p{
-  padding: 0px;
-  font-size: 10px;
-}
-#contact button{
-  font-size: 15px;
-
-}
-#map {
-width: 100%;
-  height: 200px;
-
-}
-
-#foot h4{
-  font-size: 13px;
-
-}
-
-.footer-social i{
-  font-size: 13px;
-  padding: 0px;
-}
-.footer-links,.footer-link,.footer-social{
-  width: 32%;
-}
-footer{
-  padding: 10px;
-}
-
-
-
-
-
-.dec{
-  font-size: 15px;
-}
-}
-</style>
-<body>
-
-<!--navbar starts  -->
- <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-     <img src="https://images.pexels.com/photos/97083/pexels-photo-97083.jpeg?dl&fit=crop&w=640&h=426">
-    </div>
-
-    <div class="collapse navbar-collapse" id="myNavbar">
-     <ul class="nav navbar-nav">
-      <li ><a href="#home">Home </a></li>
-      <li><a href="#about">about</a> </li>
-      <li><a href="#flight">SWEETS </a></li>
-      <li><a href="#popular">RESTURENTS</a>  </li>
-      <li><a href="#contact">contact</a>  </li>
-     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-tag"></span> Login</a></li>
-      <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-    </ul>
-    </div>
-  </div>
-</nav>
-<!-- navbar ends -->
-
-
-
-
-<!-- home starts -->
-  <div class="container-fluid">
-    <div class="row">
-      <section id="home">
-        <div class="all">
-         <button class="btt">Hotel Services</button>
-         <button class="btt"><i class="fa fa-plane" aria-hidden="true"></i></button>
-        </div>
-        <h1>HOTEL MOON VALLEY </h1>
-        <h3>CHOOSE THE BEST
-
-                 </h3>
-        <a href="#"><i class="glyphicon glyphicon-heart"></i></a>
-      </section>
-    </div>
-
-  <!-- home ends -->
-
-
-
-  <!-- about starts  -->
-  <div class="row">
-   <section id="about">
-    <h2>About </h2>
-      <div class="dec">
-       <div class="dec-line"></div>&emsp;&#9880;&emsp;<div class="dec-line"></div>
-      </div>
-
-      <p>
-        HOTEL PRINCESS (4 stars) is located at the most attractive part of Bar, nearby the promenade along the sea shore, and is surrounded by lush vegetation, museum complex and sport terraines.
-Rooms and apartments are comfortable and contemporarily designed, with exceptional views of the marina, beach and sea, palace and mountains at the town s hinterland. Hotel has 135 rooms, which offer modern comfort: mini bar, air conditioner, satelite & cable TV, safety deposit box, as well as all neccessary accesories and room service.
-Choose the bathroom you want: with bath tub and shower bath tub; only with bath tub or only with shower bath tub. Our restaurants offer specialties of national & international cuisine, various drinks, accompanied with good service. Lobby & Piano bar are pleasant spaces for rest, while having a drink and conversation with business partners or friends. You can enjoy and also have a drink or try some sweets or cakes at the Pool bar, from which you can go out to the pool and spacious terrace of the hotel.
-
-
-      </p>
-      <div class="col-md-12">
-        <div class="col-md-4 col-xs-12">
-          <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?dl&fit=crop&w=640&h=426">
-        </div>
-        <div class="col-md-4 col-xs-12">
-          <img src="https://images.pexels.com/photos/97083/pexels-photo-97083.jpeg?dl&fit=crop&w=640&h=426" >
-        </div>
-        <div class="col-md-4 col-xs-12">
-          <img src="https://images.pexels.com/photos/53577/hotel-architectural-tourism-travel-53577.jpeg?dl&fit=crop&w=640&h=426" >
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="col-md-4 col-xs-12">
-          <img src="https://images.pexels.com/photos/297984/pexels-photo-297984.jpeg?dl&fit=crop&w=640&h=426" >
-        </div>
-      <div class="col-md-4 col-xs-12">
-         <img src="https://images.pexels.com/photos/271672/pexels-photo-271672.jpeg?dl&fit=crop&w=640&h=426" >
-      </div>
-      <div class="col-md-4 col-xs-12">
-          <img src="https://images.pexels.com/photos/189293/pexels-photo-189293.jpeg?dl&fit=crop&w=640&h=426" >
-      </div>
-     </div>
-    </section>
-   </div>
-<!-- about ends -->
-
-
-
-
-<!-- table starts -->
-<div class="row">
-  <section id="flight">
-    <h2>SWEETS</h2>
-    <div class="dec">
-  <div class="dec-line"></div>&emsp;&#9880;&emsp;<div class="dec-line"></div>
-  </div>
-
-    <h4>
-      Check what is trending
-    </h4>
-    <table class="table table-bordered">
-      <thead>
-       <tr>
-        <th>SWEETS</th>
-        <th>Price</th>
-        <th>Ratinmgs</th>
-       </tr>
-      </thead>
-    <tbody>
-     <tr>
-      <td>1 BedROOM  SWEET</td>
-      <td> 	$200 </td>
-      <td>*** </td>
-     </tr>
-    <tr>
-     <td>2 BEDROOM  SWEET</td>
-     <td> 	$230 </td>
-     <td>***</td>
-    </tr>
-   <tr>
-     <td>HONEYMOON SWEET</td>
-     <td> 	$300 </td>
-     <td>****</td>
-    </tr>
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  background:rgba(0,0,0,0.3);
+   border-radius:10px 10px 0 0 ;
    
-     </tbody>
-    </table>
-  </section>
+  color: black;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  background:rgba(0,0,0,0.3);
+  border-radius: 0 0 10px 10px;
+  padding-bottom: 10px;
+  color: black;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
 
-   </div>
-  <!--table ends  -->
+small {
+  opacity: 0;
+}
 
+.show-description p {
+  height: 150px;
+}
 
+.show-description small {
+  opacity: 1;
+}
 
-<!-- destination starts -->
-<div class="row">
-  <section id="popular">
-    <h2>BEST SWEETS</h2>
-    <div class="dec">
-  <div class="dec-line"></div>&emsp;&#9880;&emsp;<div class="dec-line"></div>
-  </div>
-    <div class="col-md-4 col-xs-12">
-     <img class="sng"src="https://images.pexels.com/photos/97083/pexels-photo-97083.jpeg?dl&fit=crop&w=640&h=426" >
-     <h3>HONEYMOON SWEET</h3>
-     <p>
-      Very friendly and welcoming. Large menu, family friendly. They have specials every night. Reminds me of the old supper clubs, where people would drive for miles to come. They still do!
+.first{
+  background-image: url("http://imageshack.com/a/img923/1636/EUGOo7.jpg");
+}
+.second{
+  background-image: url("http://imageshack.com/a/img924/3066/ZrMGYF.jpg");
+}
+.third{
+  background-image: url("http://imageshack.com/a/img922/7445/D3ItPS.jpg");
+}
+.fourth{
+  background-image: url("http://imageshack.com/a/img922/1246/xq1ZOe.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
 
-     </p>
-     <button class="bbb">More details</button>
-   </div>
-   <div class="col-md-4 col-xs-12">
-    <img class="sng"src="https://images.pexels.com/photos/300256/pexels-photo-300256.jpeg?dl&fit=crop&w=300&h=200" >
-    <h3>1 BEDROOM SWEET</h3> 
-    <p>
-  I have enjoyed Ruebens, salads, and burgers at noon. Evening meals were superb also. Heartily recommend this location. Prices are reasonable.
+</style>
 
+</head>
 
-    </p>
-       <button class="bbb">More details</button>
-   </div>
-   <div class="col-md-4 col-xs-12">
-     <img class="sng"src="https://images.pexels.com/photos/264468/pexels-photo-264468.jpeg?dl&fit=crop&w=300&h=200" >
-     <h3>2 BEDROOM SWEET</h3>
-     <p>
- This is a great place that is in an old brick hotel, you can still get a room. The food is simple but very good. It's a place you can decide to visit at the last minute and just jump in the car and take off.
-     </p>
-     <button class="bbb">More details</button>
-   </div>
-
-  </section>
-
-  </div>
-  <!-- destination ends -->
-
-
-  <!-- contact us starts -->
-  <div class="row">
-    <section id="contact">
-
-      <div class="contact-box">
-        <h3>where to meet?</h3>
-        <p>
-       20/55 DELHI
-        </p>
-        <button >  Contact Us</button>
-        <h3>Want to say hello?</h3>
-        <p>Thank you for 499 shares!</p>
-        <button class="ee">  <i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</button>
-        <button class="ee">  <i class="fa fa-twitter" aria-hidden="true"></i>Twiter</button>
-
-      </div>
-        <div id="map"></div>
-    </section>
-
-  </div>
-  <!-- contact us ends  -->
-
-
-  <!-- footer starts -->
-
-    <div class="row">
-      <footer>
-       <section id="foot">
-        <div class="footer-links">
-          <a href="#"><h4>Privacy Terms&Conditi</h4></a>
-
-        </div>
-        <div class="footer-link">
-            <a href="#"><h4>2017 CLUB 18+</h4></a>
-
-        </div>
-
-        <div class="footer-social">
-          <a href="#">  <i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-
-          <a href="#">  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-        </div>
-      </section>
-    </footer>
-  </div>
-
-
-
-
-
-  <!-- footer ends -->
-
+<body>
+<h1>Mobomarket</h1>
+<h2>Get the Best Phone you want</h2>
+<div class="first">
+  <p>IPhone 7 <span class="price">60,000/-</span><br />
+  <small>THE GOOD Improved front and rear cameras -- now with optical image stabilization -- deliver much improved photos, especially in low light. Water resistant. A faster processor, plus better battery life. More onboard storage than last year's models for the same price.<a href="http://www.gsmarena.com/apple_iphone_7-8064.php">Click here for detailed description</a></small></p>
 </div>
+
+<div class="second">
+  <p>Samsung Galaxy Note 7<span class="price">49,500/-</span><br />
+  <small>The Samsung Galaxy Note7 is powered by 1.6GHz octa-core Exynos 8890 processor and it comes with 4GB of RAM. The phone packs 64GB of internal storage that can be expanded up to 256GB via a microSD card. ... The Samsung Galaxy Note7 is a dual SIM (GSM and GSM) smartphone that accepts two Nano-SIM.<a href="http://www.gsmarena.com/samsung_galaxy_note7-8082.php">Click here for detailed description</a></small></p>
+</div>
+  
+<div class="third">
+  <p>Google Pixel<span class="price">57,000/-</span><br />
+  <small>The Google Pixel is rumored to have 12 MP primary camera and 8 MP front facing camera as the Nexus 6P which was released last year. The Nexus mobiles didn%u2019t get that much fame last year as compared to the previous years. The other thing is, it will be a 5%u2033 inch display for Google Pixel and 5.5%u2033 inch Display for Google Pixel XL..<a href="http://www.gsmarena.com/google_pixel_xl-8345.php">Click here for detailed description</a></small></p>
+</div>
+<div class="fourth">
+  <p>LG G5<span class="price">33,449/-</span><br />
+  <small>The LG G5 is powered by 2.15GHz quad-core Qualcomm Snapdragon 820 processor and it comes with 4GB of RAM. The phone packs 32GB of internal storage that can be expanded up to 200GB via a microSD card. ... The LG G5 is a dual SIM (GSM and GSM) smartphone that accepts two Nano-SIM.<a href="http://www.gsmarena.com/lg_g5-7815.php">Click here for detailed description</a></small></p>
+</div>
+
 <script>
-     function initMap() {
-       var uluru = {lat: 28.5561624, lng: 77.0977691};
-       var map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 13,
-         center: uluru
-       });
-       var marker = new google.maps.Marker({
-         position: uluru,
-         map: map
-       });
-     }
-   </script>
-
-
-
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9GtTegz3dLuxMBFsK_WzbczDpd_W_BVI&callback=initMap">
-    </script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
 
 </body>
-</html>
