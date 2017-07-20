@@ -1,331 +1,136 @@
-
 <!DOCTYPE html>
 <html>
-<title>Chauhan Travels</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<title>style hunt official</title>
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
-.myLink {display: none}
-
-
-* {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;}
-.mySlides {display:none}
-.facebook{
-text-align: center;
-  data-tabs="timeline,events,messages"
-  
-  data-hide-cover="false"></div>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
 }
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+div {
+  height: 200px;
+  background-size: cover;
   position: relative;
-  margin: auto;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
 }
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+h1 {
+  font-family: 'Londrina Shadow', cursive;1
   text-align: center;
+  font-size: 130px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+  background-image: url("http://i.imgur.com/Kc8EnNF.jpg");
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 10px 0 70px 0;
+  background-image: url("http://i.imgur.com/7fixGjk.jpg");
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
   position: absolute;
-  top: 0;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
 }
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+small {
+  opacity: 0;
 }
-
-.active {
-  background-color: #717171;
+.show-description p {
+  height: 150px;
 }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.show-description small {
+  opacity: 1;
 }
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-
-
-</style>
-<body class="w3-light-grey">
-
-<!-- Navigation Bar -->
-<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
-  <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Logo</b></a>
-  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
-</div>
-
-<!-- Header -->
-
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="https://images.pexels.com/photos/105234/pexels-photo-105234.jpeg?dl&fit=crop&w=1280&h=853" style="width:100%">
-  <div class="text">PARIS</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="https://images.pexels.com/photos/247873/pexels-photo-247873.jpeg?dl&fit=crop&w=1280&h=839" style="width:100%">
-  <div class="text">CINQUE TERRE</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="https://images.pexels.com/photos/416676/pexels-photo-416676.jpeg?dl&fit=crop&w=1280&h=640" style="width:100%">
-  <div class="text">NEW YORK</div>
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
-   <div class="w3-display-middle" style="width:65%">
-    <div class="w3-bar w3-black">
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Flight</button>
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed w3-margin-right"></i>Hotel</button>
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car w3-margin-right"></i>Rental</button>
-    </div>
-
-    <!-- Tabs -->
-    <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
-      <h3>Travel the world with us</h3>
-      <div class="w3-row-padding" style="margin:0 -16px;">
-        <div class="w3-half">
-          <label>From</label>
-          <input class="w3-input w3-border" type="text" placeholder="Departing from">
-        </div>
-        <div class="w3-half">
-          <label>To</label>
-          <input class="w3-input w3-border" type="text" placeholder="Arriving at">
-        </div>
-      </div>
-      <p><button class="w3-button w3-dark-grey">Search and find dates</button></p>
-    </div>
-
-    <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
-      <h3>Find the best hotels</h3>
-      <p>Book a hotel with us and get the best fares and promotions.</p>
-      <p>We know hotels - we know comfort.</p>
-      <p><button class="w3-button w3-dark-grey">Search Hotels</button></p>
-    </div>
-
-    <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
-      <h3>Best car rental in the world!</h3>
-      <p><span class="w3-tag w3-deep-orange">DISCOUNT!</span> Special offer if you book today: 25% off anywhere in the world with CarServiceRentalRUs</p>
-      <input class="w3-input w3-border" type="text" placeholder="Pick-up point">
-      <p><button class="w3-button w3-dark-grey">Search Availability</button></p>
-    </div>
-  </div>
-</header>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px;">
-
-  <!-- Good offers -->
-  <div class="w3-container w3-margin-top">
-    <h3>Good Offers Right Now</h3>
-    <h6>Up to <strong>50%</strong> discount.</h6>
-  </div>
-  <div class="w3-row-padding w3-text-white w3-large">
-    <div class="w3-half w3-margin-bottom">
-      <div class="w3-display-container">
-        <img src="https://images.pexels.com/photos/153944/pexels-photo-153944.jpeg?dl&fit=crop&w=640&h=426" alt="Cinque Terre" style="width:100%">
-        <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
-      </div>
-    </div>
-    <div class="w3-half">
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="https://images.pexels.com/photos/496117/pexels-photo-496117.jpeg?dl&fit=crop&w=640&h=426" alt="New York" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">New York</span>
-          </div>
-        </div>
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="https://images.pexels.com/photos/454880/pexels-photo-454880.jpeg?dl&fit=crop&w=640&h=410" alt="San Francisco" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">San Francisco</span>
-          </div>
-        </div>
-      </div>
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="https://images.pexels.com/photos/443696/pexels-photo-443696.jpeg?dl&fit=crop&w=640&h=426" alt="Pisa" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">Pisa</span>
-          </div>
-        </div>
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?dl&fit=crop&w=640&h=426" alt="Paris" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">Paris</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Explore Nature -->
-  <div class="w3-container">
-    <h3>Explore Nature</h3>
-    <p>Travel with us and see nature at its finest.</p>
-  </div>
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <img src="https://images.pexels.com/photos/327525/pexels-photo-327525.jpeg?dl&fit=crop&w=640&h=426" alt="Norway" style="width:100%">
-      <div class="w3-container w3-white">
-        <h3>West Coast, Norway</h3>
-        <p class="w3-opacity">Roundtrip from $79</p>
-        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-        <button class="w3-button w3-margin-bottom">Buy Tickets</button>
-      </div>
-    </div>
-    <div class="w3-half w3-margin-bottom">
-      <img src="https://images.pexels.com/photos/139761/pexels-photo-139761.jpeg?dl&fit=crop&w=640&h=426" alt="Austria" style="width:100%">
-      <div class="w3-container w3-white">
-        <h3>Mountains, Austria</h3>
-        <p class="w3-opacity">One-way from $39</p>
-        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-        <button class="w3-button w3-margin-bottom">Buy Tickets</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Newsletter -->
-  <div class="w3-container">
-    <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card-2 w3-hover-opacity-off">
-      <h2>Get the best offers first!</h2>
-      <p>Join our newsletter.</p>
-      <label>E-mail</label>
-      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
-      <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
-    </div>
-  </div>
-  
-  <!-- Contact -->
-  <div class="w3-container">
-    <h2>Contact</h2>
-    <p>Let us book your next trip!</p>
-    <i class="fa fa-map-marker" style="width:30px"></i> Chandigarh, INDIA<br>
-    <i class="fa fa-phone" style="width:30px"></i> Phone: +91 786391530<br>
-    <i class="fa fa-envelope" style="width:30px"> </i> Email: kushrana012@gmail.com<br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
-    </form>
-  </div>
-  
-<!-- End page content -->
-</div>
-<div class="facebook">
-<p><h1>Sponsered By Next Generation Developer's</h1></p>
-  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwebfun%2F&tabs=timeline&width=500&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
-  <h5>Find Us On</h5>
-  <div class="w3-xlarge w3-padding-16">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
+.first{
+  background-image: url("http://i.imgur.com/F9mXBjw.jpg");
  
-</footer>
+}
+.second{
+  background-image: url("http://i.imgur.com/FBovWmJ.jpg");
+  
+}
+.third{
+  background-image: url("http://i.imgur.com/JAGLiXF.jpg");
+}
+.fourth{
+background-image: url("http://i.imgur.com/EOincUi.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  small {
+    font-size: 16px;
+  }
+}
+</style>
 
+</head>
+<body>
+<h1>STYLE HUNT </h1>
+<h2>Great Deals On Top Product</h2>
+
+<div class="first">
+<p>T-shirts <span class="price">50-80% off</span><br />
+  <small>A T-shirt (or tee shirt, or tee) is a style of unisex fabric shirt, named after the T shape of the body and sleeves. It is normally associated with short sleeves, a round neck line known as a crew neck, with no collar. T-shirts are generally made of a light, inexpensive fabric, and are easy to clean.<li><a href="https://www.google.co.in/search?biw=1366&bih=662&noj=1&tbm=isch&sa=1&q=t+shirts+design&oq=t+&gs_l=img.1.0.35i39k1l2j0i67k1l2j0l2j0i67k1j0l2j0i67k1.160246.162063.0.166666.7.7.0.0.0.0.344.654.3-2.2.0....0...1c.1.64.img..5.2.652.0.fzAhOC8pU_I">show more</a></li> </small></p>
+</div>
+
+<div class="second">
+
+  <p>Shirts <span class="price">30-40% off</span><br />
+  <small>Everybody has at least one shirt in his wardrobe. Some have more. They are commonly worn for every day purposes and in particular when you want to dress up. But not many people know that the shirt is one of our oldest garments. <li><a href="https://www.google.co.in/search?biw=1366&bih=662&noj=1&tbm=isch&sa=1&q=shirts+design&oq=shirts+design&gs_l=img.3..0i67k1j0l9.100696.100871.0.101854.2.2.0.0.0.0.687.687.5-1.1.0....0...1c.1.64.img..1.1.686.DYEJiA68dxU">show more</a></li></small></p>
+</div>
+
+<div class="third">
+  <p>Jeans<span class="price">20-35% off</span><br />
+  <small>Jeans are trousers, a type of garment, typically made from denim or dungaree cloth. Often the term "jeans" refers to a particular style of pants, called "blue jeans," which were invented by Jacob W. Davis in partnership with Levi Strauss & Co. in 1871 and patented by Jacob W. Davis and Levi Strauss on May 20, 1873. <li><a href="https://www.google.co.in/search?biw=1366&bih=662&noj=1&tbm=isch&sa=1&q=jeans+design&oq=jeans+&gs_l=img.1.2.0i67k1l4j0l2j0i67k1j0j0i67k1l2.44327.48791.0.52726.19.14.0.0.0.0.564.857.2-1j5-1.2.0....0...1c.1.64.img..17.2.856.0..35i39k1.WOxphIoHtpU">show more</a></li></small></p>
+</div>
+<div class="fourth">
+  <p>shoes<span class="price">30% off</span><br />
+  <small> All shoes have a sole, which is the bottom of a shoe, in contact with the ground. Soles can be made from a variety of materials, although most modern shoes have soles made from natural rubber, polyurethane, or polyvinyl chloride (PVC) compounds. <li><a href="https://www.google.co.in/search?biw=1366&bih=662&noj=1&tbm=isch&sa=1&q=shoes&oq=shoes&gs_l=img.3...6352.8118.0.8901.6.6.0.0.0.0.0.0..0.0....0...1c.1.64.img..6.0.0.wUHbfxNkep4">show more</a></li></small></p>
+</div>
 <script>
-// Tabs
-function openLink(evt, linkName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("myLink");
-  for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(linkName).style.display = "block";
-  evt.currentTarget.className += " w3-red";
-}
-// Click on the first tablink on load
-document.getElementsByClassName("tablink")[0].click();
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
 </script>
-<script >
-  var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
-
 </body>
 </html>
